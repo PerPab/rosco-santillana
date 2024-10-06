@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Para un mejor control de los bordes y relleno */
+}
+
+body,
+html {
+    height: 100%;
+    /* Asegura que el body y html ocupen el 100% de la pantalla */
+    overflow: hidden;
+}
+
+body {
+    background-image: url('/res/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    display: grid;
+
+    grid-template-rows: 15% 60% 10% 15%;
+    /* Define las alturas de las celdas */
+    width: 100%;
+    /* Ocupar 100% del ancho de la pantalla */
+    height: 100vh;
+    /* Ocupar 100% de la altura de la ventana */
+    /*max-width: 1024px;*/
+    /* Limita el ancho máximo a 900px */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    position: relative;
+}
+
+.celda {
+    display: flex;
+    /* Centrar el contenido en las celdas */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+
+    /* Color de fondo para las celdas */
+}
+
+/* Diferentes colores de fondo para cada celda */
+.celda1 {
+    overflow: hidden;
+
+}
+
+.celda2 {
+    display: flex;
+
+}
+
+.celda3 {
+
+    display: flex;
+}
+
+.celda4 {
+    overflow: hidden;
+
+}
+
+.img-techo {
+    width: 100%;
+    height: 100%;
+}
+
+.img-madera {
+    width: 100%;
+    height: auto;
+    max-height: 135px;
+    position: absolute;
+    z-index: 6;
+}
+
+.btn {
+    position: absolute;
+    z-index: 10;
+}
+
+.img-rueda {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-hoja {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.img-bicho-1 {
+    width: 20%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    bottom: 35px;
+}
+
+.img-bicho-2 {
+    width: 20%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 35px;
+}
+
+
+/* Media Query para pantallas mayores a 1900px */
+@media (min-width: 1900px) {
+
+    .celda3 {
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 22%;
+        bottom: 20px;
+    }
+
+    .img-bicho-1 {
+        width: 22%;
+        bottom: 20px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 100%;
+
+
+    }
+
+    .img-hoja {
+        width: 100%;
+
+    }
+}
+
+/* Media Query para pantallas mayores a 900px */
+@media (min-width: 900px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 22%;
+        bottom: 20px;
+    }
+
+    .img-bicho-1 {
+        width: 22%;
+        bottom: 20px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 50%;
+
+    }
+
+    .img-hoja {
+        width: 50%;
+
+    }
+}
+
+
+/* Media Query para pantallas menores a 900px */
+@media (max-width: 900px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 23%;
+        bottom: 40px;
+    }
+
+    .img-bicho-1 {
+        width: 23%;
+        bottom: 40px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 50%;
+
+    }
+
+    .img-hoja {
+        width: 50%;
+
+    }
+}
+
+
+/* Media Query para pantallas menores a 800px */
+@media (max-width: 800px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 23%;
+        bottom: 60px;
+    }
+
+    .img-bicho-1 {
+        width: 23%;
+        bottom: 60px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 55%;
+
+    }
+
+    .img-hoja {
+        width: 55%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 700px */
+@media (max-width: 700px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 25%;
+        bottom: 60px;
+    }
+
+    .img-bicho-1 {
+        width: 25%;
+        bottom: 60px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 60%;
+
+    }
+
+    .img-hoja {
+        width: 60%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 600px */
+@media (max-width: 600px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 27%;
+        bottom: 60px;
+    }
+
+    .img-bicho-1 {
+        width: 27%;
+        bottom: 60px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 70%;
+
+    }
+
+    .img-hoja {
+        width: 70%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 500px */
+@media (max-width: 500px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 30%;
+        bottom: 70px;
+    }
+
+    .img-bicho-1 {
+        width: 30%;
+        bottom: 70px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 90%;
+
+    }
+
+    .img-hoja {
+        width: 90%;
+
+    }
+
+}
+
+/* Media Query para pantallas menores a 400px */
+@media (max-width: 400px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 35%;
+        bottom: 70px;
+    }
+
+    .img-bicho-1 {
+        width: 35%;
+        bottom: 70px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 100%;
+
+    }
+
+    .img-hoja {
+        width: 100%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 350px */
+@media (max-width: 350px) {
+
+    .celda3 {
+
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 40%;
+        bottom: 70px;
+    }
+
+    .img-bicho-1 {
+        width: 40%;
+        bottom: 70px;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 100%;
+
+    }
+
+    .img-hoja {
+        width: 100%;
+
+    }
+}
+
+
+
+/*.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: conic-gradient(#ffadad 0deg 51.43deg,
+            #ffd6a5 51.43deg 102.86deg,
+            #fdffb6 102.86deg 154.29deg,
+            #caffbf 154.29deg 205.71deg,
+            #9bf6ff 205.71deg 257.14deg,
+            #a0c4ff 257.14deg 308.57deg,
+            #bdb2ff 308.57deg 360deg);
+}*/
