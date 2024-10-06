@@ -22,7 +22,7 @@ body {
 .contenedor {
     display: grid;
 
-    grid-template-rows: 15% 60% 10% 15%;
+    grid-template-rows: 15% 66% 4% 15%;
     /* Define las alturas de las celdas */
     width: 100%;
     /* Ocupar 100% del ancho de la pantalla */
@@ -64,6 +64,8 @@ body {
 
 .celda4 {
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
 
 }
 
@@ -83,19 +85,20 @@ body {
 .btn {
     position: absolute;
     z-index: 10;
+    margin: 1rem;
 }
 
 .img-rueda {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     padding: 1rem;
     position: absolute;
     z-index: 1;
 }
 
 .img-hoja {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     padding: 1rem;
     position: absolute;
     z-index: 2;
@@ -109,7 +112,6 @@ body {
     position: absolute;
     left: 0;
     z-index: 4;
-    bottom: 35px;
 }
 
 .img-bicho-2 {
@@ -120,7 +122,6 @@ body {
     position: absolute;
     z-index: 5;
     right: 0;
-    bottom: 35px;
 }
 
 
@@ -168,12 +169,12 @@ body {
 
     .img-bicho-2 {
         width: 22%;
-        bottom: 20px;
+        bottom: 2%;
     }
 
     .img-bicho-1 {
         width: 22%;
-        bottom: 20px;
+        bottom: 2%;
     }
 
     .contenedor {
@@ -182,33 +183,98 @@ body {
     }
 
     .img-rueda {
-        width: 50%;
+        width: 32%;
 
     }
 
     .img-hoja {
-        width: 50%;
+        width: 32%;
 
     }
 }
 
 
-/* Media Query para pantallas menores a 900px */
-@media (max-width: 900px) {
+/* Media Query para pantallas menores a 1899px */
+@media (max-width: 1899px) {
 
     .celda3 {
+        display: flex;
+    }
 
+    .img-bicho-2 {
+        width: 20%;
+        bottom: 4%;
+    }
+
+    .img-bicho-1 {
+        width: 20%;
+        bottom: 2%;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 33%;
+
+    }
+
+    .img-hoja {
+        width: 33%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 1100px */
+@media (max-width: 1100px) {
+
+    .celda3 {
         display: flex;
     }
 
     .img-bicho-2 {
         width: 23%;
-        bottom: 40px;
+        bottom: 2%;
     }
 
     .img-bicho-1 {
         width: 23%;
-        bottom: 40px;
+        bottom: 2%;
+    }
+
+    .contenedor {
+        width: 100%;
+        /* Ocupar el 100% del ancho de la pantalla, pero limitado por max-width */
+    }
+
+    .img-rueda {
+        width: 43%;
+
+    }
+
+    .img-hoja {
+        width: 43%;
+
+    }
+}
+
+/* Media Query para pantallas menores a 900px */
+@media (max-width: 900px) {
+
+    .celda3 {
+        display: flex;
+    }
+
+    .img-bicho-2 {
+        width: 23%;
+        bottom: 5%;
+    }
+
+    .img-bicho-1 {
+        width: 23%;
+        bottom: 5%;
     }
 
     .contenedor {
@@ -226,6 +292,8 @@ body {
 
     }
 }
+
+
 
 
 /* Media Query para pantallas menores a 800px */
@@ -238,12 +306,12 @@ body {
 
     .img-bicho-2 {
         width: 23%;
-        bottom: 60px;
+        bottom: 6%;
     }
 
     .img-bicho-1 {
         width: 23%;
-        bottom: 60px;
+        bottom: 6%;
     }
 
     .contenedor {
@@ -272,12 +340,12 @@ body {
 
     .img-bicho-2 {
         width: 25%;
-        bottom: 60px;
+        bottom: 7%;
     }
 
     .img-bicho-1 {
         width: 25%;
-        bottom: 60px;
+        bottom: 7%;
     }
 
     .contenedor {
@@ -286,12 +354,12 @@ body {
     }
 
     .img-rueda {
-        width: 60%;
+        width: 68%;
 
     }
 
     .img-hoja {
-        width: 60%;
+        width: 68%;
 
     }
 }
@@ -306,12 +374,12 @@ body {
 
     .img-bicho-2 {
         width: 27%;
-        bottom: 60px;
+        bottom: 6%;
     }
 
     .img-bicho-1 {
         width: 27%;
-        bottom: 60px;
+        bottom: 6%;
     }
 
     .contenedor {
@@ -320,12 +388,12 @@ body {
     }
 
     .img-rueda {
-        width: 70%;
+        width: 80%;
 
     }
 
     .img-hoja {
-        width: 70%;
+        width: 80%;
 
     }
 }
@@ -340,12 +408,12 @@ body {
 
     .img-bicho-2 {
         width: 30%;
-        bottom: 70px;
+        bottom: 7%;
     }
 
     .img-bicho-1 {
         width: 30%;
-        bottom: 70px;
+        bottom: 7%;
     }
 
     .contenedor {
@@ -375,12 +443,12 @@ body {
 
     .img-bicho-2 {
         width: 35%;
-        bottom: 70px;
+        bottom: 8%;
     }
 
     .img-bicho-1 {
         width: 35%;
-        bottom: 70px;
+        bottom: 8%;
     }
 
     .contenedor {
@@ -409,12 +477,12 @@ body {
 
     .img-bicho-2 {
         width: 40%;
-        bottom: 70px;
+        bottom: 8%;
     }
 
     .img-bicho-1 {
         width: 40%;
-        bottom: 70px;
+        bottom: 8%;
     }
 
     .contenedor {
