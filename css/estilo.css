@@ -9,7 +9,7 @@ body,
 html {
     height: 100%;
     /* Asegura que el body y html ocupen el 100% de la pantalla */
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 
 /* Diferentes colores de fondo para cada celda */
 .celda1 {
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 }
 
@@ -58,27 +58,30 @@ body {
 }
 
 .celda3 {
-
     display: flex;
 }
 
 .celda4 {
     overflow: hidden;
     display: flex;
+    width: 100%;
     align-items: flex-start;
 
 }
 
 .img-techo {
     width: 100%;
-    height: 100%;
+    height: 99.49px;
+    background-color: rgb(8, 156, 235);
+
 }
 
 .img-madera {
+    display: flex;
     width: 100%;
-    height: auto;
-    max-height: 135px;
+    height: 99.50px;
     position: absolute;
+    background-color: chocolate;
     z-index: 6;
 }
 
@@ -458,13 +461,21 @@ body {
 
     .img-rueda {
         width: 100%;
+        padding: 0.2rem;
 
     }
 
     .img-hoja {
         width: 100%;
+        padding: 0.2rem;
 
     }
+
+    /*body,
+    html {
+
+        overflow: auto;
+    }*/
 }
 
 /* Media Query para pantallas menores a 350px */
@@ -492,11 +503,13 @@ body {
 
     .img-rueda {
         width: 100%;
+        padding: 0.2rem;
 
     }
 
     .img-hoja {
         width: 100%;
+        padding: 0.2rem;
 
     }
 }
